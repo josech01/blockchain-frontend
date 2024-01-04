@@ -1,0 +1,35 @@
+.text-base {
+  margin: 0;
+}
+
+.white {
+  color: white;
+}
+
+.grey {
+  color: #666666 !important;
+}
+
+.glow {
+  text-shadow: 0px 0px 35px #ffffff;
+}
+
+.head-text {
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.xs-text {
+  font-size: 10px;
+}
+
+.card-head {
+  font-size: 20px;
+  font-weight: 500;
+}

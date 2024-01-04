@@ -1,0 +1,13 @@
+@import '../../../helpers/responsive.scss';
+
+div[class^='Widget__WidgetWrapper'] {
+  margin: auto;
+  width: 360px;
+  box-shadow: 0 40px 120px 0 rgba(75, 131, 251, 0.16) !important;
+  @include respond-to-min($breakpoint-large) {
+    width: 340px;
+  }
+  @include respond-to($breakpoint-small) {
+    width: 300px;
+  }
+}

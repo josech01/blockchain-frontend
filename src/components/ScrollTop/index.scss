@@ -1,0 +1,18 @@
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  background: #202020;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  &:hover {
+    border: 1px solid rgba(255, 255, 255, 0.534);
+  }
+  &.show-scroll-button {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,43 @@
+.baker-container {
+  padding: 100px 0px;
+  padding-top: 70px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  gap: 30px;
+}
+
+.baker-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  gap: 12px;
+}
+
+.baker-cards-container {
+  max-width: 900px;
+  width: 100%;
+}
+
+.provide_liquidity {
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 40px !important;
+  text-align: center;
+  max-width: 300px;
+  background: #181719;
+  color: white !important;
+  display: flex;
+  border: 1px solid black;
+  padding: 7px 17px;
+  align-items: center;
+
+  img {
+    margin-right: 7px;
+  }
+}

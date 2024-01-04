@@ -1,0 +1,223 @@
+@import '../../helpers/responsive.scss';
+
+.glow-purple {
+  box-shadow: 1px 1px 30px #4d165e, 1px 1px 30px #68045a;
+}
+
+.claim-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .head-text {
+    img {
+      margin: 0px 10px;
+    }
+  }
+
+  .mainnet-pointer {
+    padding: 4px 8px;
+    color: #666666;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .star {
+    margin: 5px;
+  }
+}
+
+.claim-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  gap: 30px;
+
+  .pulse-address {
+    border: 1px solid #666666;
+    border-radius: 28px;
+    height: 45px;
+    max-width: 450px;
+    background: #262626;
+    padding: 10px;
+    font-size: 14px;
+    color: #666666;
+    padding-left: 25px;
+    text-align: center;
+  }
+
+  .additional {
+    color: #666666;
+    display: flex;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .claim-btn {
+    text-transform: uppercase;
+    display: flex;
+    font-size: 20px;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    background-image: linear-gradient(70deg, rgb(46, 178, 48) 0%, rgb(41, 174, 81) 61%, rgb(24, 170, 109) 100%);
+    border: none;
+    position: relative;
+    font-weight: 700;
+    overflow: hidden;
+
+    .spinner {
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      margin-right: 5px;
+      border-left-color: #ffffff;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0px 0px 10px rgb(46, 178, 48);
+    }
+  }
+
+  .claim-btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+
+  .claim-btn:hover:after {
+    left: 100%;
+  }
+
+  .claim-btn span {
+    position: absolute;
+    display: block;
+    transition: 0.5s ease;
+  }
+
+  .claim-btn span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #fff;
+  }
+
+  .claim-btn:hover span:nth-child(1) {
+    width: 100%;
+    transform: translateX(100%);
+  }
+
+  .claim-btn span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background: #fff;
+  }
+
+  .claim-btn:hover span:nth-child(3) {
+    width: 100%;
+    transform: translateX(-100%);
+  }
+
+  .claim-btn span:nth-child(2) {
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 0;
+    background: #fff;
+  }
+
+  .claim-btn:hover span:nth-child(2) {
+    height: 100%;
+    transform: translateY(100%);
+  }
+
+  .claim-btn span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    height: 0;
+    background: #fff;
+  }
+
+  .claim-btn:hover span:nth-child(4) {
+    height: 100%;
+    transform: translateY(-100%);
+  }
+}
+
+.pray-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  gap: 12px;
+
+  .description-text {
+    color: #666666;
+  }
+
+  .address {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.recaptcha {
+  margin: 20px 0px;
+}
+
+@include respond-to($breakpoint-small) {
+  .claim-container {
+    .claim-header {
+      .head-text {
+        font-size: 20px;
+        padding-top: 50px;
+
+        img {
+          margin: 5px;
+        }
+      }
+    }
+
+    .mainnet-pointer {
+      font-size: 14px;
+    }
+
+    .claim-content {
+      .pulse-address {
+        width: 95%;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@include respond-to-min($breakpoint-small) {
+  .pulse-address {
+    width: 450px;
+  }
+}

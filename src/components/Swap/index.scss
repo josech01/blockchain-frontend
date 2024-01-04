@@ -1,0 +1,29 @@
+@import '../../helpers/responsive.scss';
+.swap-div {
+  padding-top: 100px;
+  justify-content: center;
+  .trade {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include respond-to($breakpoint-small) {
+      font-size: 20px;
+    }
+  }
+  .chart-div {
+    margin: 0px 20px;
+    @include respond-to($breakpoint-small) {
+      margin: 0;
+    }
+  }
+  .star-div {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    img {
+      padding: 2px;
+    }
+  }
+}

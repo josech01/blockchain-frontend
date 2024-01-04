@@ -1,0 +1,215 @@
+@import '../../helpers/responsive.scss';
+$green: #04ff39;
+$red: red;
+
+.topbar {
+  background: #131416 !important;
+  box-shadow: none !important;
+  .price-div {
+    color: #666666;
+    font-size: 12px;
+    .green-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #04ff39;
+      box-shadow: 0px 0px 20px #04ff39;
+      margin: 0px 10px;
+    }
+  }
+
+  .triangle {
+    width: 8px;
+    height: 8px;
+    margin-right: 2px;
+
+    &.up {
+      border-bottom: solid 4px $green;
+      border-left: solid 4px transparent;
+      border-right: solid 4px transparent;
+      margin-top: -4px;
+    }
+
+    &.down {
+      border-top: solid 4px $red;
+      border-left: solid 4px transparent;
+      border-right: solid 4px transparent;
+      margin-top: 4px;
+    }
+  }
+}
+@include respond-to($breakpoint-small) {
+  .toolbar {
+    padding: 5px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    .price-div {
+      font-size: 9px;
+      .green-dot {
+        margin: 2px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.site-logo {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+
+  .logo {
+    font-size: 30px;
+    font-weight: 800;
+    margin-right: 20px;
+
+    img {
+      width: 50px;
+      margin-right: 19px;
+    }
+  }
+  @include respond-to($breakpoint-small) {
+    .logo {
+      font-size: 14px;
+      font-weight: 800;
+      margin-right: 5px;
+
+      img {
+        width: 35px;
+        margin-right: 2px;
+      }
+    }
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.link-div {
+  display: flex;
+  justify-content: flex-end;
+  .copy-contract {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 25px;
+      margin-right: 10px;
+      @include respond-to($breakpoint-medium) {
+        margin-right: 2px;
+      }
+    }
+  }
+  .social-link {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    color: white;
+    @include respond-to($breakpoint-medium) {
+      padding: 0px 2px;
+    }
+    img {
+      width: 35px;
+      margin-right: 10px;
+      @include respond-to($breakpoint-medium) {
+        margin-right: 2px;
+      }
+    }
+  }
+  @include respond-to($breakpoint-large) {
+    .link-title {
+      display: none;
+    }
+  }
+  @include respond-to($breakpoint-small) {
+    display: none;
+  }
+}
+
+#menu-appbar {
+  .social-link {
+    display: flex;
+    color: white;
+    p {
+      font-size: 12px;
+      margin-left: 10px;
+    }
+  }
+}
+.scroll-link {
+  font-size: 12px;
+  cursor: pointer;
+  .MuiBadge-badge {
+    right: -40px;
+  }
+  @include respond-to($breakpoint-small) {
+    padding: 1px;
+    font-size: 12px;
+    .MuiBadge-badge {
+      font-size: 8px;
+      right: -35px;
+      top: 2px;
+      height: 15px;
+    }
+  }
+}
+.queue {
+  margin-right: 2%;
+  color: #04ff39;
+  display: flex;
+  align-items: center;
+  p {
+    color: white;
+  }
+}
+.mobile-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @include respond-to-min($breakpoint-small) {
+    display: none;
+  }
+}
+.toast-message {
+  display: flex;
+  align-items: center;
+  background: black;
+}
+.Toastify__close-button {
+  display: none;
+}
+
+.toast-message-body {
+  margin-right: 10px;
+  color: white;
+  padding: 0 !important;
+  .toast-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+  }
+  img {
+    margin-right: 10px;
+  }
+}
+
+.MuiMenu-paper {
+  width: 160px;
+  background: #3a3a3a !important;
+  color: white !important;
+}
+.mobile-connect-wallet {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 25px;
+  @include respond-to-min($breakpoint-small) {
+    display: none;
+  }
+  .connect-btn {
+    font-size: 12px;
+    padding: 3px 5px;
+  }
+}

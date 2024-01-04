@@ -1,0 +1,137 @@
+.App {
+  text-align: center;
+  background: #131416;
+  position: relative;
+}
+@font-face {
+  font-family: 'systemFont';
+  src: url('./font.ttf');
+}
+* {
+  font-family: 'systemFont', 'Helvetica', 'Arial', sans-serif !important;
+}
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 14px;
+  }
+}
+// button {
+//   cursor: url('./hand.png'), auto !important;
+// }
+.app-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;
+}
+
+div[class^='TokenOptions__OnHover'] {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+// html::-webkit-scrollbar {
+//   width: 10px;
+//   /* margin: 50px 10px; */
+// }
+
+// /* Track */
+// html::-webkit-scrollbar-track {
+//   box-shadow: inset 0 0 5px grey;
+//   border-radius: 10px;
+// }
+
+// /* Handle */
+// html::-webkit-scrollbar-thumb {
+//   border-radius: 10px;
+//   background: #272727;
+// }
+
+// /* Handle on hover */
+// html::-webkit-scrollbar-thumb:hover {
+//   background: #f3ba2c;
+// }
+
+.Toastify__toast-body {
+  justify-content: center;
+}
+
+.lds-ring {
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes glowing {
+  0% {
+    background-color: #2d2e32;
+    box-shadow: 0 0 5px #2d2e32;
+  }
+  50% {
+    background-color: #b9b9b9;
+    box-shadow: 0 0 20px #b9b9b9;
+  }
+  100% {
+    background-color: #2d2e32;
+    box-shadow: 0 0 5px #2d2e32;
+  }
+}
+
+#webpack-dev-server-client-overlay {
+  display: none;
+}
+@keyframes animateC {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}

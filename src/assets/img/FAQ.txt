@@ -1,0 +1,37 @@
+
+FAQ
+
+Q: How does this work?
+A:  When Pulse Chain mainnet goes live, you will be able to swap PLSIOU 1:1 with PLS. We will deploy a contract on Pulse Chain that holds an equal amount of PLS as minted PLSIOU. You will then be able to claim PLS and burn PLSIOU directly on the Pulse Chain mainnet
+
+Q: What does IOU mean?
+A: IOU stands for “I owe you” which is a classic technique of issuing a digital receipt of being owed something. In this case 1 PLS. Having 1 PLSIOU is a digital receipt that you are owed 1 PLS on Pulsechain Mainnet.
+
+Q: Can I sell PLSIOU again?
+A: Yes, you can buy and sell as much as you like.
+
+Q: Why should I trust this site?
+A: This service is provided by some of the most trusted projects in the Pulse Chain community. You can jump to our backers section here
+
+Q: Is this an ERC20 token?
+A: Yes it is! When Pulse Chain goes live, all PLSIOU will be copied over, and you will be able to swap it for native PLS. 
+
+Q: How does liquidity work?
+A: We have deployed X PLSIOU as single sided v3 liquidity as USDC pair. The liquidity starting position is 0.002 USDC per PLSIOU
+
+Q: How many PLSIOU tokens will be minted?
+A: We will mint the exact amount of PLSIOU tokens as we have PLS backed from trusted liquidity partners.
+
+Q: Does the token contract have admin keys?
+A: Yes it does. We need to mint PLSIOU tokens as we secure liquidity, and we need to disable the token as soon as Pulse Chain goes live. We don’t want anyone to buy or sell the token after Pulsechain Mainnet goes live. 
+
+Q: What happens when the snapshot is completed?
+A: We will disable the token transfers via admin key and remove all liquidity on Ethereum mainnet. Effectively making PLSIOU a completely dead token with zero activity.
+
+Q: What if I quickly sell my PLSIOU on ETH seconds after the Pulse chain snapshot?
+A: You can only redeem PLS on pulsechain mainnet, if you have your balance on ETH. 
+If you sell at ANY time before redeeming on Pulse chain, you will not be able to get PLS. 
+
+
+Q: When will the LP on Ethereum close?
+A: The responsible actor of the PLSIOU LP will reserve the full right to pull the liquidity and end the LP on Ethereum at any time it sees fit. This is to mitigate risk during the Pulse chain main net fork. Pulling the liquidity means that we close the sale of more PLSIOU tokens. 

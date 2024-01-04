@@ -1,0 +1,46 @@
+@import '../../helpers/responsive.scss';
+.faq-div {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  margin-top: 80px;
+  .faq-des {
+    font-size: 30px;
+    padding-bottom: 45px;
+    @include respond-to($breakpoint-small) {
+      font-size: 20px;
+    }
+  }
+  .faq-accordion {
+    max-width: 600px;
+    margin: auto;
+    .faq-accoridon-q {
+      color: white;
+      text-align: left;
+      font-weight: 600;
+      font-size: 18px;
+      flex: 1;
+      @include respond-to($breakpoint-small) {
+        font-size: 14px;
+      }
+    }
+    .faq-accordian-a {
+      text-align: justify;
+      color: #959595;
+    }
+    .faq-bordered {
+      border: 2px solid transparent;
+      -webkit-border-image: linear-gradient(16deg, #ff0060, #9e2fdb, #00aeff) 1;
+      border-image: linear-gradient(16deg, #ff0060, #9e2fdb, #00aeff) 1;
+    }
+    .accordion-arrow {
+      height: 100%;
+      width: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #2a2a2a;
+    }
+  }
+}
